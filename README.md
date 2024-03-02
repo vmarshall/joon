@@ -3,6 +3,8 @@
 ## Overview
 
 [Takehome](https://docs.google.com/document/d/1ZqXTFazI782Ked0mD7UT2lac3O_Nang0/edit) 
+
+Once the app is running go to http://localhost:8000 and I tried to explain my assumptions/solution on the index page
 ## Setup
 
 1. Unzip the repository
