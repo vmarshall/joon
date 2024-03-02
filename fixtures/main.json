@@ -1,0 +1,149 @@
+[
+{
+    "model": "main.quest",
+    "pk": 1,
+    "fields": {
+        "title": "Quest One",
+        "description": "I only happen on Fridays",
+        "date_created": "2024-03-01T23:36:03.565Z",
+        "date_completed": null,
+        "completed": null
+    }
+},
+{
+    "model": "main.quest",
+    "pk": 3,
+    "fields": {
+        "title": "Quest Three",
+        "description": "I should repeat Monday, Wednesday, and Friday",
+        "date_created": "2024-03-02T00:45:56.252Z",
+        "date_completed": null,
+        "completed": null
+    }
+},
+{
+    "model": "main.quest",
+    "pk": 5,
+    "fields": {
+        "title": "Quest Five",
+        "description": "Should repeat on Tuesday",
+        "date_created": "2024-03-02T00:54:56.112Z",
+        "date_completed": null,
+        "completed": null
+    }
+},
+{
+    "model": "main.quest",
+    "pk": 7,
+    "fields": {
+        "title": "Last Quest",
+        "description": "This quest should be marked completed",
+        "date_created": "2024-03-02T06:13:16.986Z",
+        "date_completed": "2024-03-02T07:39:58Z",
+        "completed": true
+    }
+},
+{
+    "model": "main.quest",
+    "pk": 13,
+    "fields": {
+        "title": "Destroy the Death Star",
+        "description": "Help me Obi-Wan Kenobi. You are our only hope.",
+        "date_created": "2024-03-02T07:25:41.007Z",
+        "date_completed": null,
+        "completed": false
+    }
+},
+{
+    "model": "main.quest",
+    "pk": 14,
+    "fields": {
+        "title": "Quest for the Holy Grail",
+        "description": "“We dine well here in Camelot. We eat ham and jam and spam a lot.” – Knights of Camelot",
+        "date_created": "2024-03-02T07:27:02.952Z",
+        "date_completed": null,
+        "completed": false
+    }
+},
+{
+    "model": "main.quest",
+    "pk": 15,
+    "fields": {
+        "title": "First Time User Experience",
+        "description": "This should be marked completed.",
+        "date_created": "2024-03-02T08:00:15.278Z",
+        "date_completed": "2024-03-02T08:00:09Z",
+        "completed": true
+    }
+},
+{
+    "model": "main.daystorepeat",
+    "pk": 5,
+    "fields": {
+        "quest": 13,
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "sunday": true
+    }
+},
+{
+    "model": "main.daystorepeat",
+    "pk": 6,
+    "fields": {
+        "quest": 5,
+        "monday": false,
+        "tuesday": true,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "sunday": false
+    }
+},
+{
+    "model": "main.daystorepeat",
+    "pk": 8,
+    "fields": {
+        "quest": 3,
+        "monday": true,
+        "tuesday": false,
+        "wednesday": true,
+        "thursday": false,
+        "friday": true,
+        "saturday": false,
+        "sunday": false
+    }
+},
+{
+    "model": "main.daystorepeat",
+    "pk": 9,
+    "fields": {
+        "quest": 7,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "sunday": false
+    }
+},
+{
+    "model": "main.daystorepeat",
+    "pk": 15,
+    "fields": {
+        "quest": 14,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "sunday": true
+    }
+}
+]

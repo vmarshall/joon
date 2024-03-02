@@ -1,0 +1,61 @@
+ <div class="row">
+     <p class="fs-5">
+
+
+     </p>
+
+     <hr class="my-4">
+
+     <p class="lead">The v2 version of the API just uses Spectacular, ViewSets and Generic DRF Serializers</p>
+     <p>Go to the Swagger or Redoc links to get CRUD API access</p>
+     <p>Go to the Admin screen to check data</p>
+     <p>Curl Examples:</p>
+
+     <ul>
+         <li>
+             Create Quest: <code>curl -X 'POST'
+             'http://localhost:8000/api/v2/quests/'
+             -H 'accept: application/json'
+             -H 'Content-Type: application/json'
+             -d '{
+             "title": "I am a new quest",
+             "description": "This should be new",
+             "repeats": "Monday, Wednesday, Friday"
+             }' -u admin:password </code>
+         </li>
+         <li>Assign Repeats to Quest: curl -X 'PUT' \
+             'http://localhost:8000/api/v2/repeats/5/'
+             -H 'accept: application/json' \
+             -H 'Content-Type: application/json'
+             -d '{
+             "id": 5,
+             "monday": true,
+             "tuesday": true,
+             "wednesday": true,
+             "thursday": true,
+             "friday": true,
+             "saturday": true,
+             "sunday": true,
+             "quest": 13
+             }''</li>
+         <li>Get all Quests: <code>curl -X 'GET'
+             'http://localhost:8000/api/v2/quests/'
+             -H 'accept: application/json' -u admin:password </code>
+         </li>
+         <li>
+             Get Quest #13: <code>curl -X 'GET'
+             'http://localhost:8000/api/v2/quests/13/'
+             -H 'accept: application/json' -u admin:password </code>
+         </li>
+         <hr class="my-4">
+         <h4>v2 API Endpoints</h4>
+         <p class="fs-5">
+
+                    <span class="p-2 ">
+                        <a href="{% url 'schema' %}" class="btn btn-primary"> Schema ( YAML )</a>
+                        <a href="{% url 'redoc' %}" class="btn btn-primary">REDOC</a>
+                        <a href="{% url 'swagger-ui' %}" class="btn btn-primary">Swagger</a>
+                    </span>
+
+         </p>
+ </div>

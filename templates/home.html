@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load bootstrap5 %}
+{% load static %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+    {% include 'version1.html' %}
+        <hr/>
+    {% include 'version2.html' %}
+    </div>
+{% endblock %}
+
+{# <a href="{% url 'quest-list' %}" class="btn btn-primary">Quest List</a>#}
+{# <a href="{% url 'repeats-list' %}" class="btn btn-primary">Repeats List</a>#}
+
+{#<a href="{% url 'get_completed_quests' %}" class="btn btn-primary">Completed Quests</a>#}
+{#<a href="{% url 'get_repeating_quests' %}" class="btn btn-primary">Repeating Quests</a>#}
